@@ -1,0 +1,135 @@
+/* General Values Start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* General Values End */
+
+
+/* Header Section Start */
+#header{
+    background-color: #e3afbc;
+    padding: 1rem 1rem 1rem 6rem;
+    text-shadow: 2px 2px #5cdb95;
+    color: #9a1750;     
+}
+
+#header h2{
+    font-weight: bold;
+}
+/* End Header Section */
+
+
+/* Form Section Start */
+#container{
+    background-color: #9a1750;
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    background-color: #e3e2df;
+    padding: 4rem;
+    text-align: center;
+}
+
+#form h2{
+     margin-bottom: 0.625rem;
+     font-weight: bold;
+     color: #9a1750;
+}
+
+input{
+    width: 300px;
+    margin: 0.625rem 0rem;
+    padding: 0.625rem;
+    border: 1px solid #e3afbc;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+input::placeholder{
+    color: #e3afbc;
+}
+
+input, select, textarea{
+    color: #9a1750;
+}
+
+.error{
+    color: #9a1750;
+    text-align: left;
+    
+}
+
+input[type="submit"]{
+    background-color: #9a1750;
+    border: 0px;
+    color: #e3e2df;
+}
+
+input[type="submit"]:hover{
+    background-color: #e3e2df;
+    color: #9a1750;
+    border: 1px solid #9a1750;
+    transition: 0.3s all ease-in-out;
+}
+
+/* End Form Section */
+
+
+/* Footer Section Start */
+#copyright{
+    background-color: #e3afbc;
+    text-align: center;
+    color: #9a1750;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+/* End Footer Section */
+
+
+/* Responsive Design Start */
+@media only screen and (max-width: 400px){
+    /* Header Section Start */
+    #header h2{   
+        display: inline-block;  
+    }
+
+    #header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;  
+    }
+
+    /* End Header Section */
+
+    #form{
+        width: 90%;
+        padding: 1.3rem;
+    }
+
+    input{
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+}
+/* End Responsive Design */
+
